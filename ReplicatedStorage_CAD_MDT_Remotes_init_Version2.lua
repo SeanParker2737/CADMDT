@@ -1,0 +1,10 @@
+-- In ReplicatedStorage, create a Folder named "CAD_MDT_Remotes" and add RemoteEvents:
+-- RemoteEvent: Login
+-- RemoteEvent: LoginResult
+-- RemoteEvent: UpdateStatus
+-- RemoteEvent: CreateCall
+-- RemoteEvent: NewCall
+-- RemoteEvent: AssignCall
+-- RemoteEvent: Lookup
+-- RemoteEvent: LookupResult
+-- RemoteEvent: AdminActions

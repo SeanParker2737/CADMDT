@@ -1,0 +1,32 @@
+# UK CAD/MDT System Setup Instructions
+
+## 1. Import Model
+- Open Roblox Studio, insert the provided .rbxm file (or copy each file into the appropriate location).
+
+## 2. Setup Remotes
+- In ReplicatedStorage, create a Folder named `CAD_MDT_Remotes`.
+- Add the following RemoteEvents: `Login`, `LoginResult`, `UpdateStatus`, `CreateCall`, `NewCall`, `AssignCall`, `Lookup`, `LookupResult`, `AdminActions`.
+
+## 3. Place Scripts
+- Place `CAD_MDT_Client` as a LocalScript inside StarterGui > CAD_MDT_UI.
+- Place `CAD_MDT_Server` as a Script inside ServerScriptService.
+- Place `CAD_MDT_Data` as a ModuleScript inside ReplicatedStorage.
+
+## 4. Configure GUI
+- The `CAD_MDT_UI` ScreenGui contains frames for login, officer, dispatcher, lookup, and admin.
+- Edit colors, fonts, and logos for a UK police look.
+
+## 5. Discord Integration
+- Open `CAD_MDT_Server` and set your Discord webhook URL at the top.
+
+## 6. Admin Setup
+- Add your Roblox username to the `AdminUsers` table in `CAD_MDT_Data` for admin panel access.
+
+## 7. Add/Expand Data
+- Add more ranks, sample vehicles, and wanted persons to `CAD_MDT_Data` as needed.
+
+## 8. Testing
+- Test login, call creation, assignment, lookup, and admin actions in Play mode.
+
+## 9. Web Panel Extension
+- To link with an external web panel, adapt the Discord webhook code to use your own API endpoints.
